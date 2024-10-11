@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main(){
+
+  int n,flage = 0;
+
+  printf("enter no. : ");
+  scanf("%d" ,&n);
+
+  for(int i=2; i <= n/2 ; i++){
+
+    if(n % i == 0){
+     flage = 1;
+     break;
+    }
+
+  }
+
+  if(flage == 1){
+    printf("%d is non prime number" ,n);
+  }
+  else{
+    printf("%d is prime number" , n);
+  }
+  
+  
+  return 0;
+}
+  
