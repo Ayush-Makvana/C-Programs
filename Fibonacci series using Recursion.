@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<string.h>
+
+int fib(int i);
+
+int main(){
+
+int term;
+printf("Enter terms : ");
+scanf("%d",&term);
+
+
+for(int i=0;i<term;i++){
+   printf("%d\t" , fib(i));
+}
+   return 0;
+}
+
+
+int fib(int i){
+ 
+   if(i == 0){
+      return 0;
+   }
+   else if(i == 1){
+      return 1;
+   }
+   else{
+   return fib(i-1) + fib(i-2);
+   }
+
+}
